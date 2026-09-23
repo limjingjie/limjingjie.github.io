@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(22, 212, 229);
+}
+
+h2 {
+    color: rgb(216, 244, 59);
+    border: 2px solid rgb(18, 41, 215);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px dashed rgb(18, 41, 215);
+
+}
