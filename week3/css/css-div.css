@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=ZCOOL+KuaiLe&display=swap');
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    text-align: center;
+    background-color: #f8c83a;
+    border-bottom: 6px dashed #642ac2;
+    border: 6px solid #000000;
+    border-radius: 15px;
+    text-shadow: 4px 2px 4px #000000;
+}
+
+h2 {
+    font-family: 'Edu QLD Hand', cursive;
+    font-size: 30px;
+    font-weight: 50;
+}
+
+h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 2;
+    color: #4affa2;
+    background-color: #ecdff1;
+    background-image: url(/week3/images/img.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 40px;
+    color: #5bcff6;
+    font-style: italic;
+}

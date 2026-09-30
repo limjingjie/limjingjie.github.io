@@ -1,0 +1,15 @@
+.big-box {
+    display: flex
+}
+
+.bgyellow {
+    background-color: #FFFF00;
+}
+
+.bgpink {
+    background-color: #FFC0C7;
+}
+
+.bglightblue {
+    background-color: #D9EEE1;
+}
