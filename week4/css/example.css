@@ -1,0 +1,44 @@
+.big-box {
+    display: flex;
+    gap: 15px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.box {
+    padding: 15px;
+    flex: 1;
+}
+
+.bgyellow {
+    background-color: #FFFF00;
+}
+
+.bgpink {
+    background-color: #FFC0C7;
+    flex: 2;
+}
+
+.bglightblue {
+    background-color: #D9EEE1;
+}
+
+@media (max-width: 800px) {
+    .big-box {
+        flex-direction: column;
+    }
+
+    .bgyellow {
+        background-color: #1edfdf95;
+    }
+}
+
+@media (max-width: 500px) {
+    .bgyellow {
+        background-color: #e97b2cf4;
+    }
+
+    .bgpink {
+        display: none;
+    }
+}
