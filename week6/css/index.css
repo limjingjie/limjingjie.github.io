@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    min-height: 500px;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    padding: 60px
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+}
+
+.button-menu {
+    background-color: #f71b1be6;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.subscribe-button {
+    background-color: #f71b1be6;
+    border: none;
+    color: #f8f4f4;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.email-input {
+    border: none;
+}
+
+.subscribe-form {
+    display: inline-block;
+    background-color: #fffbfbe6;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.text {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards h1 {
+    font-size: 20px;
+}
+
+.cards p {
+    font-size: 16px;
+}
+
+.text-red {
+    background-color: #ff0000;
+    color: #f8f4f4;
+    min-height: 400px;
+    background-size: cover;
+    padding: 30px
+}
+
+.text2 {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background-position: center 50%;
+    }
+
+    .banner-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        background-position: center 80%;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
