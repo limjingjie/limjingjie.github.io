@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="romaliya">ROMALIYA</div>
+            </div>
+            <div class="menu">
+                <div>Home</div>
+                <div>Menu</div>
+                <div>Order</div>
+                <div>Promotion</div>
+                <div>About Us</div>
+                <div>Our Restaurant</div>
+                <div><img src="images/order.png" alt="order"></div>
+            </div>
+
+            <div class="buger">
+                <img src="images/hambuger.png" alt="menu">
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <p>ROMALIYA TAKEOUT</p>
+                <h1>ORDER ONLINE</h1>
+            </div>
+        </div>
+    </header>
+    <div class="text">
+        <div class="text1">
+            <p>FROM OUR KITCHEN TO YOUR TABLE</p>
+            <h2>CHOOSE YOUR FAVOURITES</h2>
+            <p>Select a quantity, add your dishes to the cart, then review everything before checkout.</p>
+        </div>
+        <div class="view">
+            <button>VIEW CART</button>
+        </div>
+    </div>
+    <div class="menu-section">
+
+        <div class="menu-header">
+            <span class="sub-title">CHEF'S SIGNATURES</span>
+            <h2 class="main-title">FINE DINING FAVORITES</h2>
+        </div>
+
+
+        <div class="card-grid">
+            <div class="food-card">
+                <div class="card-img">
+                    <img src="images/poached.png" alt="butter-poachedlobster">
+                </div>
+                <div class="card-content">
+                    <span class="tag">SIGNATURE SEAFOOD</span>
+                    <h3 class="food-title">BUTTER-POACHED LOBSTER</h3>
+                    <p class="food-desc">Tender lobster gently poached in butter for a rich, delicate finish</p>
+                    <div class="price">$88</div>
+
+                    <div class="action-bar">
+                        <div class="quantity-selector">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                            </div>
+                        </div>
+                        <button class="btn-primary">ADD TO CART</button>
+                        <button class="btn-secondary">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card-img">
+                    <img src="images/duckbreast.png" alt="duckbreast">
+                </div>
+                <div class="card-content">
+                    <span class="tag">CHEF'S PICK</span>
+                    <h3 class="food-title">DUCK BREAST WITH CHERRY SAUCE</h3>
+                    <p class="food-desc">Juicy duck breast paired with a bright cherry sauce for a sweet-savory balance.
+                    </p>
+                    <div class="price">$ 58</div>
+
+                    <div class="action-bar">
+                        <div class="quantity-selector">
+                            <div class="value-button1" id="decrease1" onclick="decreaseValue1()"
+                                value="Decrease Value1">
+                                -
+                            </div>
+                            <input type="number1" id="number1" value="0" />
+                            <div class="value-button1" id="increase1" onclick="increaseValue1()"
+                                value="Increase Value1">
+                                +
+                            </div>
+                        </div>
+                        <button class="btn-primary">ADD TO CART</button>
+                        <button class="btn-secondary">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+    <script>
+        function increaseValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number1').value = value;
+        }
+
+        function decreaseValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number1').value = value;
+        }
+    </script>
+</body>
+
+</html>

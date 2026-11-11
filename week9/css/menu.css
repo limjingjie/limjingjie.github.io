@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    margin: 0;
+    color: aliceblue
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 85px;
+    padding: 20px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    color: #ddd;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu div {
+    white-space: nowrap;
+}
+
+.menu img {
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+.buger {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    padding: 125px 50px;
+    margin: 100px 0 0;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    min-height: 600px;
+    background-size: cover;
+}
+
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+
+.banner-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    width: 100%;
+}
+
+.food {
+    display: flex;
+    gap: 16px;
+    padding: 10px 25px 30px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.butter,
+.chocolate,
+.duck {
+    width: 33.33%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+.butter {
+    background-image: url("../images/butter.png");
+
+}
+
+.chocolate {
+    background-image: url("../images/chocolate.png");
+
+}
+
+.duck {
+    background-image: url("../images/duck.png");
+}
+
+.food h6 {
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.maincourse {
+    display: flex;
+    align-items: stretch;
+}
+
+.maincourse .background {
+    width: 50%;
+}
+
+.maincourse .background img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.maincourse .text {
+    width: 50%;
+    padding: 25px 40px;
+}
+
+.maincourse .text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    margin: 0 0 18px;
+}
+
+.maincourse .text h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    margin: 10px 0 3px;
+}
+
+.maincourse .text p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.maincourse .text p1 {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.back {
+    background-image: url("../images/background2.png");
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    padding: 125px 50px;
+}
+
+.desserts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 9%;
+    background: white;
+}
+
+.dessert {
+    width: 25%;
+}
+
+.dessert img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.dessert-down {
+    margin-top: 80px;
+}
+
+.dessert-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.dessert-info h3 {
+    margin: 5px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+}
+
+.dessert-info span {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.drink {
+    min-height: 460px;
+    padding: 110px 9%;
+    color: white;
+
+    background:
+        url("../images/drink.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.drink-text {
+    max-width: 340px;
+}
+
+.drink-text h1 {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 54px;
+}
+
+.drink-text h6 {
+    margin: 5px 0 55px;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.small-text {
+    width: 55px;
+    height: 1px;
+    margin-bottom: 25px;
+    background: #aaa;
+}
+
+.drink-text p {
+    margin-bottom: 32px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.drink-text a {
+    display: inline-block;
+    padding: 12px 16px;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.last {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+    .header .menu {
+        display: none;
+    }
+
+    .buger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .buger img {
+        display: block;
+        width: 30px;
+        height: auto;
+    }
+
+    .banner {
+        min-height: 450px;
+        padding: 100px 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 70px;
+    }
+
+    .food {
+
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .butter,
+    .chocolate,
+    .duck {
+        width: 100%;
+        height: 500px;
+    }
+
+    .maincourse .text {
+        padding: 20px;
+    }
+
+    .maincourse .text h1 {
+        font-size: 55px;
+    }
+
+    .maincourse .text h6 {
+        font-size: 22px;
+    }
+
+    .maincourse .text p {
+        font-size: 15px;
+    }
+
+    .desserts {
+        padding: 30px 5%;
+        gap: 12px;
+    }
+
+    .dessert img {
+        height: 220px;
+    }
+
+    .drink {
+        padding: 80px 7%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .banner {
+        min-height: 350px;
+        padding: 90px 20px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .banner-content h1 {
+        font-size: 48px;
+    }
+
+
+    .food {
+        flex-direction: column;
+        padding: 10px 20px 25px;
+    }
+
+    .butter,
+    .chocolate,
+    .duck {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .maincourse {
+        flex-direction: column;
+    }
+
+    .maincourse .background,
+    .maincourse .text {
+        width: 100%;
+    }
+
+    .maincourse .background img {
+        height: 300px;
+    }
+
+    .maincourse .text {
+        padding: 25px 20px;
+    }
+
+    .maincourse .text h1 {
+        font-size: 45px;
+    }
+
+    .maincourse .text h6 {
+        font-size: 20px;
+    }
+
+    .maincourse .text p {
+        font-size: 14px;
+    }
+
+    .back {
+        min-height: 350px;
+        padding: 80px 20px;
+        font-size: 45px;
+    }
+
+    .desserts {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+    .dessert {
+        width: 100%;
+    }
+
+    .dessert img {
+        height: 300px;
+    }
+
+    .dessert-down {
+        margin-top: 0;
+    }
+
+    .dessert-info h3 {
+        font-size: 15px;
+    }
+
+    .drink {
+        min-height: 400px;
+        padding: 70px 25px;
+    }
+
+    .drink-text h1 {
+        font-size: 42px;
+    }
+
+    .last img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
