@@ -102,6 +102,10 @@ header {
     width: 100%;
 }
 
+.banner-cart h1 {
+    display: none;
+}
+
 .food {
     display: flex;
     gap: 16px;
@@ -333,8 +337,18 @@ header {
         padding: 100px 30px;
     }
 
+    .banner-content {
+        display: none;
+    }
+
     .banner-content h1 {
         font-size: 70px;
+    }
+
+    .banner-cart h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 70px;
+        width: 100%;
     }
 
     .food {
