@@ -30,6 +30,7 @@
             <div class="buger">
                 <img src="images/hambuger.png" alt="menu">
             </div>
+
         </div>
         <div class="banner">
             <div class="banner-content">
@@ -112,6 +113,112 @@
         </div>
     </div>
 
+    <div class="menu-hero-card">
+        <div class="menu-hero-img">
+            <img src="images/pork.png" alt="Twice Cooked Pork">
+        </div>
+        <div class="menu-hero-content">
+            <span class="menu-sub-title">HOUSE FAVOURITE</span>
+            <h2 class="menu-hero-title">TWICE COOKED PORK</h2>
+            <p class="menu-hero-desc">
+                Nunc nec neque cras id dui curabitur blandit mollis lacus.
+            </p>
+
+            <div class="menu-hero-action">
+                <div class="menu-qty-box">
+                    <button class="menu-qty-btn" onclick="changeQty(this, -1)">-</button>
+                    <span class="menu-qty-num">1</span>
+                    <button class="menu-qty-btn" onclick="changeQty(this, 1)">+</button>
+                </div>
+                <button class="menu-btn-white">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-grid-section">
+        <div class="menu-section-header">
+            <span class="menu-sub-title">CHEF'S SIGNATURES</span>
+            <h2 class="menu-main-title">FINE DINING FAVORITES</h2>
+        </div>
+
+        <div class="menu-card-grid">
+            <div class="menu-food-card">
+                <div class="menu-card-img">
+                    <img src="images/salmon.png" alt="Ahi Salmon Nigiri">
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-food-title">AHI SALMON NIGIRI</h3>
+                    <p class="menu-food-desc">Fresh salmon served nigiri-style with a clean, delicate finish.</p>
+                    <div class="menu-price">$ 28</div>
+
+                    <div class="menu-action-bar">
+                        <div class="menu-qty-box menu-qty-wide">
+                            <button class="menu-qty-btn" onclick="changeQty(this, -1)">-</button>
+                            <span class="menu-qty-num">1</span>
+                            <button class="menu-qty-btn" onclick="changeQty(this, 1)">+</button>
+                        </div>
+                        <button class="menu-btn-gold">ADD TO CART</button>
+                        <button class="menu-btn-outline">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-food-card">
+                <div class="menu-card-img">
+                    <img src="images/sushi.png" alt="Char Siu & Sushis">
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-food-title">CHAR SIU & SUSHIS</h3>
+                    <p class="menu-food-desc">Cantonese barbecue pork paired with an assortment of freshly prepared
+                        sushi.</p>
+                    <div class="menu-price">$ 48</div>
+
+                    <div class="menu-action-bar">
+                        <div class="menu-qty-box menu-qty-wide">
+                            <button class="menu-qty-btn" onclick="changeQty(this, -1)">-</button>
+                            <span class="menu-qty-num">1</span>
+                            <button class="menu-qty-btn" onclick="changeQty(this, 1)">+</button>
+                        </div>
+                        <button class="menu-btn-gold">ADD TO CART</button>
+                        <button class="menu-btn-outline">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-food-card">
+                <div class="menu-card-img">
+                    <img src="images/rolls.png" alt="California Rolls">
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-food-title">CALIFORNIA ROLLS</h3>
+                    <p class="menu-food-desc">Fresh sushi rolls filled with crab, avocado, cucumber, and creamy
+                        mayonnaise.</p>
+                    <div class="menu-price">$ 22</div>
+
+                    <div class="menu-action-bar">
+                        <div class="menu-qty-box menu-qty-wide">
+                            <button class="menu-qty-btn" onclick="changeQty(this, -1)">-</button>
+                            <span class="menu-qty-num">1</span>
+                            <button class="menu-qty-btn" onclick="changeQty(this, 1)">+</button>
+                        </div>
+                        <button class="menu-btn-gold">ADD TO CART</button>
+                        <button class="menu-btn-outline">VIEW CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="review">
+        <p>READY TO CHECKOUT?</p>
+        <h2>Review your cart</h2>
+        <p>You still can edit your product quantity in the cart.</p>
+        <button>VIEW CART AND CHECKOUT</button>
+    </div>
+    <div class="last">
+        <img src="images/backgroundlast.png" alt="last">
+    </div>
+
     <script>
         function increaseValue() {
             var value = parseInt(document.getElementById('number').value, 10);
@@ -142,6 +249,19 @@
             value < 1 ? value = 1 : '';
             value--;
             document.getElementById('number1').value = value;
+        }
+    </script>
+    <script>
+        function changeQty(btn, step) {
+            var container = btn.parentElement;
+            var numSpan = container.querySelector('.menu-qty-num');
+            var currentVal = parseInt(numSpan.textContent, 10);
+            currentVal = isNaN(currentVal) ? 1 : currentVal;
+
+            var newVal = currentVal + step;
+            if (newVal < 0) newVal = 0;
+
+            numSpan.textContent = newVal;
         }
     </script>
 </body>
