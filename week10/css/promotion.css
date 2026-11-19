@@ -198,7 +198,7 @@ header {
 .img1 p {
     margin: auto;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     right: 90px;
 }
@@ -212,7 +212,10 @@ header {
 .img2 p {
     margin: auto;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+    bottom: 100px;
 }
 
 .img3 {
@@ -226,7 +229,297 @@ header {
 .img3 p {
     margin: auto;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
-    right: 300px;
+    right: 280px;
+}
+
+.reserve {
+    font-family: "word sans", sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 170px;
+}
+
+.reserve button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white
+}
+
+.membership {
+    text-align: center;
+    background-image: url("../images/tier.jpg");
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    background-size: cover;
+    padding: 140px 50px;
+    position: relative;
+    bottom: 100px;
+}
+
+.membership h1 {
+    font-family: "Babes Neue", sans-serif;
+    font-size: 60px;
+    gap: 40px;
+}
+
+.membership p {
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+}
+
+.apply-img {
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+.apply-img img {
+    padding: 40px;
+}
+
+.last {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .buger img {
+        display: block;
+        width: 30px;
+        height: auto;
+    }
+
+    .banner {
+        flex-direction: column;
+        min-height: auto;
+        padding-top: 85px;
+    }
+
+    .background {
+        width: 100%;
+        top: 0;
+        height: 450px;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 50px 40px;
+    }
+
+    .seasonal {
+        padding: 50px 30px;
+    }
+
+    .specials-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .specials-img img {
+        padding: 0;
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+
+    .remember {
+        min-height: 380px;
+        padding: 80px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mix-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 30px;
+        gap: 40px;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        padding: 0;
+        width: 100%;
+        max-width: 480px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img2 img {
+        order: 1;
+    }
+
+    .img2 p {
+        order: 2;
+    }
+
+    .img1 img,
+    .img2 img,
+    .img3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img1 p,
+    .img2 p,
+    .img3 p {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 15px 0 0 0;
+        font-size: 24px;
+    }
+
+    .reserve {
+        position: static;
+        bottom: auto;
+        margin-top: 10px;
+    }
+
+    .membership {
+        position: static;
+        bottom: auto;
+        min-height: 380px;
+        padding: 80px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .apply-img {
+        position: static;
+        top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .apply-img img {
+        padding: 0;
+        width: calc(50% - 15px);
+        max-width: 340px;
+        height: auto;
+    }
+
+    .last img {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .background {
+        height: 320px;
+    }
+
+    .banner-content {
+        padding: 35px 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .seasonal {
+        padding: 40px 20px;
+    }
+
+    .specials-text p {
+        font-size: 24px;
+    }
+
+    .specials-text h1 {
+        font-size: 36px;
+    }
+
+    .specials-img img {
+        max-width: 100%;
+    }
+
+    .remember {
+        min-height: 300px;
+        padding: 60px 20px;
+    }
+
+    .remember h1 {
+        font-size: 34px;
+    }
+
+    .mix-img {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .img1 p,
+    .img2 p,
+    .img3 p {
+        font-size: 20px;
+    }
+
+    .membership {
+        min-height: 300px;
+        padding: 60px 20px;
+    }
+
+    .membership h1 {
+        font-size: 36px;
+    }
+
+    .membership p {
+        font-size: 15px;
+    }
+
+    .apply-img {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .apply-img img {
+        width: 100%;
+        max-width: 340px;
+    }
 }
