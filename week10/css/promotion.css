@@ -70,6 +70,9 @@ header {
 
 .buger {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .banner {

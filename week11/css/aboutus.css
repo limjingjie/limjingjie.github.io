@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    margin: 0;
+    color: aliceblue
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 85px;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.romaliya {
+    font-family: 'Bebas Neue' sans-serif
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #ddd;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu div {
+    white-space: nowrap;
+}
+
+.menu img {
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+.buger {
+    display: none;
+}
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.banner-content {
+    text-align: center;
+    width: 47%;
+    min-height: 100px;
+    padding: 125px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.banner-content h6 {
+    margin: 0 0 22px;
+    color: #ddd;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: "Work Sans", sans-serif;
+}
+
+.banner-content h1 {
+    margin: 0 0 30px;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.25;
+    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.banner-content p {
+    max-width: 420px;
+    margin: 0;
+    padding: 3px 0;
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.55;
+    position: relative;
+    left: 100px;
+}
+
+.background {
+    position: relative;
+    width: 50%;
+    height: auto;
+    top: 100px
+}
+
+.background img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.culinary h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 95px;
+}
+
+.culinaryimage {
+    display: flex;
+}
+
+.culinary p {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 320px;
+}
+
+.commitment {
+    display: flex;
+    color: #f5f0f0;
+}
+
+.commit-text {
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+
+.text {
+    position: relative;
+    top: 200px;
+}
+
+.commit-text h1 {
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: left;
+    padding: 10px 70px;
+}
+
+.commit-text p {
+    font-family: "Lora", sans-serif;
+    font-size: 19px;
+    padding: 10px 70px;
+    text-align: left;
+}
+
+.commit-image {
+    width: auto;
+}
+
+.ourach {
+    background-image: url('../image/achbackground.jpg');
+    background-size: cover;
+    color: #ddd;
+    position: relative;
+    margin-top: -70px;
+}
+
+.ach-text {
+    text-align: center;
+}
+
+.ach-text h1 {
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.ach-text p {
+    font-family: "LorA", sans-serif;
+    font-size: 17px;
+}
