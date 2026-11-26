@@ -108,13 +108,11 @@ header {
 
 .banner-content p {
     max-width: 420px;
-    margin: 0;
+    margin: 0 auto;
     padding: 3px 0;
     font-family: "Lora", serif;
     font-size: 16px;
     line-height: 1.55;
-    position: relative;
-    left: 100px;
 }
 
 .background {
@@ -132,6 +130,10 @@ header {
     object-position: center;
 }
 
+.culinary {
+    padding: 60px 8%;
+}
+
 .culinary h1 {
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
@@ -140,13 +142,22 @@ header {
 
 .culinaryimage {
     display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.culinaryimage img {
+    width: 50%;
+    object-fit: cover;
 }
 
 .culinary p {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Lora", serif;
     text-align: center;
-    font-size: 20px;
-    padding: 20px 320px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
 }
 
 .commitment {
@@ -155,14 +166,15 @@ header {
 }
 
 .commit-text {
-    text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: black;
+    flex: 1;
 }
 
 .text {
-    position: relative;
-    top: 200px;
+    padding: 40px 0px;
 }
 
 .commit-text h1 {
@@ -184,11 +196,11 @@ header {
 }
 
 .ourach {
-    background-image: url('../image/achbackground.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../image/achbackground.jpg');
     background-size: cover;
+    background-position: center;
     color: #ddd;
-    position: relative;
-    margin-top: -70px;
+    padding: 80px 8%;
 }
 
 .ach-text {
@@ -203,4 +215,114 @@ header {
 .ach-text p {
     font-family: "LorA", sans-serif;
     font-size: 17px;
+}
+
+.ach-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.ach-grid img {
+    width: 30%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.last img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        position: relative;
+        padding: 20px 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .buger img {
+        display: block;
+        width: 30px;
+        height: auto;
+    }
+
+    .banner {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .background {
+        width: 100%;
+        top: 0;
+        height: 450px;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .culinary {
+        padding: 50px 30px;
+    }
+
+    .culinary h1 {
+        font-size: 55px;
+    }
+
+    .commitment {
+        min-height: 420px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('../image/commit1.png');
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .commit-image,
+    .commit-image2 {
+        display: none;
+    }
+
+    .commit-text {
+        background-color: transparent;
+        padding: 40px 30px;
+    }
+
+    .commit-text h1,
+    .commit-text p {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .ourach {
+        padding: 60px 30px;
+    }
+
+    .ach-text h1 {
+        font-size: 50px;
+    }
+
+    .ach-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ach-grid img {
+        width: 100%;
+        max-width: 280px;
+    }
 }

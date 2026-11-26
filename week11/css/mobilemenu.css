@@ -21,8 +21,7 @@
     border-radius: 5px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .buger {
         display: block;
         position: fixed;
@@ -46,14 +45,12 @@
         right: -100%;
 
         transition: all 0.3s ease;
-        /* make smooth transition */
         z-index: 1000;
     }
 
     .menu.active {
         opacity: 1;
         right: 0;
-        /* change from -100% to 0 */
     }
 
     .menu-item {

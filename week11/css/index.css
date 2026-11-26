@@ -11,7 +11,6 @@ body {
 header {
     min-height: 100px;
     position: relative;
-    overflow: hidden;
     background-color: black;
     margin: 0;
     color: aliceblue
@@ -261,17 +260,7 @@ header {
         padding: 15px 6%;
     }
 
-    .header .menu {
-        display: none;
-    }
 
-    .buger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 999;
-    }
 
     .buger img {
         display: block;
